@@ -23,11 +23,5 @@ namespace WakeSharp.Tests
             byte[] bytes = WakeBroadcaster.GetMacBytes(MacString);
             Assert.IsTrue(FastCompare.Equals(s_macBytes, bytes));
         }
-
-        [TestMethod]
-        public void WakeUpTests()
-        {
-            WakeBroadcaster.Wakeup(MacString);
-        }
     }
 }
